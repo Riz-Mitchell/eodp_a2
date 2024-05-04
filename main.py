@@ -24,7 +24,6 @@ ratings_df = ratings_df[~ratings_df["User-ID"].isin(USER_ID_del)]
     From ratings_df remove USER_ID and ISBN
 """
 
-
 books_df.to_csv("datasets_preprocessed\BX-Books_Processed.csv", index=False)
 users_df.to_csv("datasets_preprocessed/BX-Users_Processed.csv", index=False)
 ratings_df.to_csv("datasets_preprocessed/BX-Ratings_Processed.csv", index=False)
